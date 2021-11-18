@@ -12,11 +12,11 @@ const Navbar = () => {
           <Langague>EN</Langague>
           <SearchContainer>
             <Input />
-            <SearchIcon />
+            <SearchIcon style={{ color: "grey", fontSize: 18 }} />
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>StyleByDiana.</Logo>
+          <Logo>{/* StyleByDiana. */}</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
@@ -32,7 +32,7 @@ const Navbar = () => {
   );
 };
 
-// Styling
+////////////////////////////////// STYLING...
 const Container = styled.div`
   height: 60px;
 `;
@@ -63,10 +63,14 @@ const Logo = styled.h1`
 `;
 const Right = styled.div`
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `;
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
+  margin-left: 25px;
 `;
 const SearchContainer = styled.div`
   border: 0.5px solid lightgrey;
