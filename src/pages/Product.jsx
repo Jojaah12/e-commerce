@@ -6,7 +6,25 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import { mobile } from "../responsive";
 
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
+
 const Product = () => {
+  const location = useLocation();
+  const id = location.pathname.split("/")[2];
+
+  const [product, setProduct] = useState({});
+
+  useEffect(() => {
+    const getProduct = async () => {
+      try{
+          const res = axios.
+      }catch(err) {
+        
+      }
+    }
+  }, [id])
+
   return (
     <Container>
       <Announcement />

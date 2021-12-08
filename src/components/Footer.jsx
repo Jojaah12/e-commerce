@@ -107,6 +107,11 @@ const SocialIcon = styled.div`
   justify-content: center;
   cursor: pointer;
   margin-right: 10px;
+  transition: all 0.5s ease;
+
+  :hover {
+    background-color: #8e98e9;
+  }
 `;
 
 const Center = styled.div`
